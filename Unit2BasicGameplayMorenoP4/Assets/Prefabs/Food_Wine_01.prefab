@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3095993454091618883}
   - component: {fileID: 1061394838445725687}
   - component: {fileID: 8427374691980313262}
+  - component: {fileID: 1902021520270539753}
   m_Layer: 0
   m_Name: Food_Wine_01
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050040738253792572}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 1.19, z: 2.62}
   m_LocalScale: {x: 3.6207, y: 2.6753, z: 3.0209}
   m_ConstrainProportionsScale: 0
@@ -97,3 +98,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
+--- !u!114 &1902021520270539753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050040738253792572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 750f9a8cbd82d3a48a24fba0b75c05c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
