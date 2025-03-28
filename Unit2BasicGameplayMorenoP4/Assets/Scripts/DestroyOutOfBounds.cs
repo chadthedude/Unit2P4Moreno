@@ -31,6 +31,11 @@ public class DestroyOutOfBounds : MonoBehaviour
             Debug.Log("Game Over!");
             Destroy(gameObject);
         }
+        else if (transform.position.x < -sideBound) 
+        {
+            Debug.Log("Game Over!");
+            Destroy(gameObject);
+        }
     }
     
 }
