@@ -13,7 +13,7 @@ public class SpawnManagerMean : MonoBehaviour
 
     // this is for the spawn time interval
     private float startDelay = 2;
-    private float spawnInterval = 1;
+    private float spawnInterval = 2;
 
     // this is for the side spawns
     private float spawnSideX = 20;

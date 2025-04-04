@@ -483,6 +483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 720575306}
+  - component: {fileID: 720575307}
   m_Layer: 0
   m_Name: SpawnManagerMean
   m_TagString: Untagged
@@ -505,6 +506,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &720575307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720575305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4941fb1fe12ca458b35bd336e248a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnAnimals:
+  - {fileID: 788530734870478332, guid: 0e7cc8fab38987a4f9dd3ffd881d0ca3, type: 3}
+  - {fileID: 550899999677354058, guid: beae1da32ae17744d8b5f4cf8e77d868, type: 3}
+  - {fileID: 676615611608729788, guid: b0e78d1b23a9a054688fd5e19b77d45f, type: 3}
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,54 +554,6 @@ Transform:
   - {fileID: 475985834}
   - {fileID: 1590138455}
   - {fileID: 425805627}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1320251050
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1320251052}
-  - component: {fileID: 1320251051}
-  m_Layer: 0
-  m_Name: SpawnManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1320251051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320251050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a045b90476b69a049851984d678a6c8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animalPrefabs:
-  - {fileID: 788530734870478332, guid: 0e7cc8fab38987a4f9dd3ffd881d0ca3, type: 3}
-  - {fileID: 550899999677354058, guid: beae1da32ae17744d8b5f4cf8e77d868, type: 3}
-  - {fileID: 676615611608729788, guid: b0e78d1b23a9a054688fd5e19b77d45f, type: 3}
---- !u!4 &1320251052
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320251050}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0519078, y: -11.130093, z: 11.73123}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1521564616 stripped
@@ -658,6 +627,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1521564625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521564616}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07fb21a8c7f8ef4da2d4cfe88e95ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 3
 --- !u!1 &1590138454
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,6 +856,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100046, guid: 2af1fa464b69e4c4cb1a408373c7d971, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1521564622}
+    - targetCorrespondingSourceObject: {fileID: 100046, guid: 2af1fa464b69e4c4cb1a408373c7d971, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1521564625}
   m_SourcePrefab: {fileID: 100100000, guid: 2af1fa464b69e4c4cb1a408373c7d971, type: 3}
 --- !u!1001 &3629194493002664229
 PrefabInstance:
@@ -927,6 +912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dog_BullDog_01
       objectReference: {fileID: 0}
+    - target: {fileID: 676615611608729788, guid: b0e78d1b23a9a054688fd5e19b77d45f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -943,6 +932,10 @@ PrefabInstance:
     - target: {fileID: 550899999677354058, guid: beae1da32ae17744d8b5f4cf8e77d868, type: 3}
       propertyPath: m_Name
       value: Animal_Stag_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 550899999677354058, guid: beae1da32ae17744d8b5f4cf8e77d868, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3274367159892769523, guid: beae1da32ae17744d8b5f4cf8e77d868, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1001,6 +994,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Rooster_Brown
       objectReference: {fileID: 0}
+    - target: {fileID: 788530734870478332, guid: 0e7cc8fab38987a4f9dd3ffd881d0ca3, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8771291048825862080, guid: 0e7cc8fab38987a4f9dd3ffd881d0ca3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0007257351
@@ -1057,5 +1054,4 @@ SceneRoots:
   - {fileID: 7868864865616721031}
   - {fileID: 3629194493002664229}
   - {fileID: 6718927658717493360}
-  - {fileID: 1320251052}
   - {fileID: 720575306}
