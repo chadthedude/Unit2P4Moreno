@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 4860653527888427656}
   - component: {fileID: 654555774075816084}
   - component: {fileID: 8592561254889904294}
+  - component: {fileID: 1773086742575276141}
   m_Layer: 0
   m_Name: Animal_Rooster_Brown
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,8 +110,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 7.6118793, y: 10.875082, z: 12.0318165}
-  m_Center: {x: 0.40388942, y: 5.4855776, z: -0.861429}
+  m_Size: {x: 7.6118793, y: 16.622581, z: 12.0318165}
+  m_Center: {x: 0.40388942, y: 8.359327, z: -0.861429}
 --- !u!114 &8592561254889904294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +124,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 725159e10ede51a4593853ef4921c42e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1773086742575276141
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788530734870478332}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &968148174765012774
 GameObject:
   m_ObjectHideFlags: 0

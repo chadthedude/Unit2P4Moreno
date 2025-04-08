@@ -22,8 +22,17 @@ public class DetectCollisions : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-           gameManager.AddLives(-1);
+            gameManager.AddLives(-1);
             Destroy(gameObject);
+            Destroy(other.gameObject);
+        }
+       
+
+        else if (other.CompareTag("Animal"))
+        {
+            gameManager.AddScore(5);
+            Destroy(gameObject);
+            Destroy(other.gameObject);
         }
         
         
